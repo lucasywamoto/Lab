@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    background-image: url(images/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 32px;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 32px;
+}
+
+.movies-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #ffc64d;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+.movies-table thead {
+    background-color: #312650;
+    color: white;
+}
+
+.movies-table th {
+    text-align: left;
+    font-weight: 700;
+    padding: 10px 6px;
+}
+
+.title, .director {
+    width: 30%;
+}
+
+.year {
+    width: 10%;
+}
+
+.genre, .rating {
+    width: 15%;
+}
+
+.movies-table tbody tr {
+    border-bottom: 1px solid #312650;
+}
+
+.movies-table tbody tr:nth-of-type(even) {
+    background-color: #ffbb2e;
+}
+
+.movies-table tbody tr td {
+    padding: 10px 6px;
+    /* width: 100px;  */
+    transition: all 0.3s ease; 
+}
+
+.movies-table tbody tr:hover {
+    background-color: #ff514f;
+}
+
+.movies-table tbody tr:hover td {
+    color: white; 
+    font-weight: 500;
+}
+
+.movies-table tr:last-of-type {
+    border-bottom: 3px solid #312650;
+}
